@@ -21,6 +21,10 @@ puts "Creating reviews..."
 # * TODO: create reviews! Remember, a review belongs to a product *
 # * and a review belongs to an user.                              *
 # *****************************************************************
-# Create Reviews Here
+
+review1=Review.create(star_rating: 6,comment: "I love it",user_id: 1,product_id:1)
+review2=Review.create(star_rating: 9,comment: "great product",user_id: 2,product_id:1)
+review3=Review.create(star_rating: 10,comment: "I would recommend it",user_id: 1,product_id:2)
+review4=Review.create(star_rating: 9,comment: "Buy, you will love it",user_id:2,product_id:2)
 
 puts "Seeding done!"
